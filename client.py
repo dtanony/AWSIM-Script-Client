@@ -393,7 +393,7 @@ def parse_args():
         help='Path to a single script file or directory where script files are located.'
     )
     parser.add_argument('-w', '--wait_writing_trace',
-                        help='true or false (default: true); To wait for writing trace before executing the next script. On set this arg to true if this client is used with AW-Runtime-Monitor; otherwise, it should be false.')
+                        help='true or false (default: true); To wait for writing trace before executing the next script. Only set this arg to true if this client is used with AW-Runtime-Monitor; otherwise, it should be false.')
     return parser.parse_args()
 
 if __name__ == '__main__':
